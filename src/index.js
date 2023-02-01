@@ -1,21 +1,16 @@
 import './style.css';
+import createNavBar from './navbar';
+import createHomePage from './home';
+import createFooter from './footer';
 
-function createNavBar() {
-  const nav = document.createElement('ul');
+function createBackground() {
+  const body = document.querySelector('body');
+  body.classList.add('bg-gradient');
 
-  const home = document.createElement('li');
-  home.textContent = 'home'
-  nav.appendChild(home);
-
-  const menu = document.createElement('li')
-  nav.appendChild(menu);
-  menu.textContent = 'menu'
-
-  const about = document.createElement('li')
-  nav.appendChild(about);
-  about.textContent = 'about'
-
-  return nav
+  return body
 }
 
-content.appendChild(createNavBar())
+createBackground()
+content.appendChild(createNavBar());
+content.appendChild(createHomePage());
+content.appendChild(createFooter());

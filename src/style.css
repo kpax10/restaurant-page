@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:wght@400;600&display=swap');
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -75,9 +77,92 @@ h6 {
   isolation: isolate;
 }
 
+/*----------------------------------------- 
+             Custom properties 
+-------------------------------------------*/
+
+:root {
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-accent: 'Monsieur La Doulaise', cursive;
+}
+
+
+
 body {
-  background-image: url(/dist/assets/restaurant-background.jpg);
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+  color: white;
+}
+
+.bg-gradient {
+  background: radial-gradient(transparent 30%, hsl(0, 0%, 0%)), url(/dist/assets/restaurant-background.jpg);
   background-position: right 35% bottom 65%;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 180px;
+}
+
+nav {
+  height: 10vh;
+  border-bottom: 2px solid rgb(211 171 28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 24, 19, 0.6);
+
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 23rem;
+}
+
+nav li {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.home-content {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  font-family: var(--ff-accent);
+  font-size: 6rem;
+  margin: 0;
+  text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
+  color: rgb(211 171 28);
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: -4rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 0.1emm black, 0 0 0.1em black, 0 0 0.1em black;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.menu-blurb {
+  margin-top: 1rem;
+  text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
+}
+
+footer {
+  height: 10vh;
+  border-top: 2px solid rgb(211 171 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 24, 19, 0.6);
+  color: rgb(211 171 28);
 }
