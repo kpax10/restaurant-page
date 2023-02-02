@@ -4,16 +4,22 @@ export default function createNavBar() {
   navBar.appendChild(ul);
 
   const home = document.createElement('li');
-  home.textContent = 'home'
+  home.textContent = 'home';
+  home.id = 'home';
+  home.classList.add('navTabs');
   ul.appendChild(home);
 
   const menu = document.createElement('li')
+  menu.textContent = 'menu';
+  menu.id = 'menu';
+  menu.classList.add('navTabs');
   ul.appendChild(menu);
-  menu.textContent = 'menu'
 
   const about = document.createElement('li');
-  ul.appendChild(about);
   about.textContent = 'about';
+  about.id = 'about';
+  about.classList.add('navTabs');
+  ul.appendChild(about);
 
   return navBar
 }

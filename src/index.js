@@ -2,6 +2,7 @@ import './style.css';
 import createNavBar from './navbar';
 import createHomePage from './home';
 import createFooter from './footer';
+import createAbout from './about';
 
 function createBackground() {
   const body = document.querySelector('body');
@@ -10,7 +11,63 @@ function createBackground() {
   return body
 }
 
+function createMainContent() {
+  const mainContent = document.createElement('div')
+  mainContent.classList.add('main-content');
+
+  return mainContent;
+}
+
+
 createBackground()
 content.appendChild(createNavBar());
-content.appendChild(createHomePage());
+content.appendChild(createMainContent());
 content.appendChild(createFooter());
+
+document.querySelector('.main-content').appendChild(createHomePage())
+// content.appendChild(createHomePage());
+
+
+// event listeners
+
+// const home = document.querySelector('#home');
+// const menu = document.querySelector('#menu');
+// const about = document.querySelector('#about');
+
+
+// home.addEventListener('click', () => {
+//   const homeContent = document.querySelector('.home-content');
+//   homeContent.remove();
+// })
+
+
+
+
+// Nav Event Listeners
+const navTabs = document.querySelectorAll('.navTabs');
+
+navTabs.forEach((tab) => {
+  tab.addEventListener('click', (e) => {
+
+    if (e.target.id === 'home') {
+      const mainContent = document.querySelector('.main-content');
+      mainContent.removeChild(mainContent.firstChild);
+      mainContent.appendChild(createHomePage());
+    }
+
+    // if (e.target.id === 'menu') {
+    //   const mainContent = document.querySelector('.main-content');
+    //   mainContent.removeChild(mainContent.firstChild);
+    //   mainContent.appendChild(createMenu());
+    // }
+
+    if (e.target.id === 'about') {
+      const mainContent = document.querySelector('.main-content');
+      mainContent.removeChild(mainContent.firstChild);
+      mainContent.appendChild(createAbout());
+    }
+
+    // document.querySelector('.main-content').appendChild(createAbout())
+
+  })
+})

@@ -127,7 +127,13 @@ nav li {
   letter-spacing: 0.2rem;
 }
 
-.home-content {
+nav li:hover {
+  margin-bottom: -2px;
+  border-bottom: 2px solid rgb(211 171 28);
+  cursor: pointer;
+}
+
+.main-content {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -137,7 +143,7 @@ nav li {
 
 .welcome {
   font-family: var(--ff-accent);
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 0;
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
   color: rgb(211 171 28);
@@ -145,7 +151,7 @@ nav li {
 
 h2 {
   font-size: 3rem;
-  margin-top: -4rem;
+  margin-top: -3.4rem;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 0.1emm black, 0 0 0.1em black, 0 0 0.1em black;
   letter-spacing: 0;
@@ -157,8 +163,32 @@ h2 {
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
 }
 
+.about-us {
+  font-family: var(--ff-accent);
+  font-size: 5rem;
+  color: rgb(211 171 28);
+  margin-top: 3rem;
+  text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
+}
+
+.about-content {
+  text-align: center;
+  width: 50rem;
+  margin: 0 auto;
+  text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
+}
+
+.about-content p {
+  padding-top: 2rem;
+}
+
+
+
 footer {
+  position: fixed;
+  bottom: 0;
   height: 10vh;
+  width: 100%;
   border-top: 2px solid rgb(211 171 28);
   display: flex;
   justify-content: center;

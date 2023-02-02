@@ -3,7 +3,7 @@ export default function createHomePage() {
   element.classList.add('home-content')
 
   const welcome = document.createElement('p');
-  welcome.textContent = 'Welcome';
+  welcome.textContent = 'Welcome to';
   welcome.classList.add('welcome');
   element.appendChild(welcome);
 
