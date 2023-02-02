@@ -173,13 +173,14 @@ h2 {
 
 .about-content {
   text-align: center;
-  width: 50rem;
-  margin: 0 auto;
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
 }
 
 .about-content p {
   padding-top: 2rem;
+  text-align: center;
+  margin: 0 5vw;
+  max-width: 50rem;
 }
 
 

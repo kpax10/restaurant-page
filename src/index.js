@@ -48,22 +48,18 @@ const navTabs = document.querySelectorAll('.navTabs');
 
 navTabs.forEach((tab) => {
   tab.addEventListener('click', (e) => {
+    const mainContent = document.querySelector('.main-content');
+    mainContent.removeChild(mainContent.firstChild);
 
     if (e.target.id === 'home') {
-      const mainContent = document.querySelector('.main-content');
-      mainContent.removeChild(mainContent.firstChild);
       mainContent.appendChild(createHomePage());
     }
 
     // if (e.target.id === 'menu') {
-    //   const mainContent = document.querySelector('.main-content');
-    //   mainContent.removeChild(mainContent.firstChild);
     //   mainContent.appendChild(createMenu());
     // }
 
     if (e.target.id === 'about') {
-      const mainContent = document.querySelector('.main-content');
-      mainContent.removeChild(mainContent.firstChild);
       mainContent.appendChild(createAbout());
     }
 
