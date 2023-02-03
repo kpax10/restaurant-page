@@ -12,7 +12,7 @@ export default function createAbout() {
   element.appendChild(h2);
 
   const p = document.createElement('p');
-  p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet ultrices porttitor, ex ex aliquet purus, pellentesque rhoncus felis ipsum nec purus. Donec id enim in risus pellentesque blandit. Proin sed nibh nec arcu mollis rhoncus in sit amet augue. Suspendisse magna nisl, eleifend non tempor et, luctus id quam. Nulla bibendum vulputate ante, non malesuada eros lobortis euismod';
+  p.textContent = `We like to think of Odin's Lounge as more than just a wonderful place to eat or be entertained. We make it our responsibility to make sure your experiences with us are memorable ones. Our promise to you is that we will always strive to reach and surpass your dining and entertainment expectations, and leave you with wonderful memories of the important days you decide to share with us. Welcome to Odin's Lounge.`;
   element.appendChild(p);
 
   return element;

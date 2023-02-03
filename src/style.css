@@ -141,11 +141,11 @@ nav li:hover {
 
 .main-content {
   height: 80vh;
-  overflow-y: scroll;
-  /* display: flex;
+  overflow-y: auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 .home-content {
@@ -154,6 +154,7 @@ nav li:hover {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+  padding: 5% 0;
 }
 
 .welcome {
@@ -181,9 +182,57 @@ h2 {
 .menu-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
 
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-heading {
+  font-family: var(--ff-accent);
+  font-size: 5rem;
+  padding-top: 1rem;
+  color: rgb(211 171 28);
+}
+
+.menu-content h2 {
+  color: rgb(0, 0, 0);
+  text-shadow: none;
+}
+
+.menu-content hr {
+  border: 1px solid rgb(211 171 28);
+  margin: 0 auto;
+  width: 30%;
+}
+
+.menu-content hr:first-of-type {
+  width: 50%;
+  border: 2px solid rgb(211 171 28);
+}
+
+.menu-item {
+  font-size: 1.3rem;
+  color: rgb(211 171 28);
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.menu-item-text {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  width: 70%;
+}
+
+.menu-content p {
+  margin-top: 0.5rem;
+}
+
+.menu-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(211 171 28);
+  margin-bottom: 1rem;
 }
 
 .about-content {
@@ -203,7 +252,6 @@ h2 {
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
 }
 
-
 .about-content p {
   padding-top: 1rem;
   text-align: center;
@@ -211,11 +259,7 @@ h2 {
   max-width: 50rem;
 }
 
-
-
 footer {
-  /* position: absolute;
-  bottom: 0; */
   height: 10vh;
   width: 100%;
   border-top: 2px solid rgb(211 171 28);
@@ -224,4 +268,25 @@ footer {
   align-items: center;
   background-color: rgba(33, 24, 19, 0.6);
   color: rgb(211 171 28);
+}
+
+@media (max-width: 600px) {
+
+  .welcome {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: -2.4rem;
+  }
+
+  .menu-heading {
+    font-size: 3.5rem;
+  }
+
+  .menu-item-text {
+    font-size: 0.8rem;
+  }
+
 }
