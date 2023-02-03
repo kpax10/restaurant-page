@@ -102,6 +102,12 @@ body {
   height: 180px;
 }
 
+#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   height: 10vh;
   border-bottom: 2px solid rgb(211 171 28);
@@ -134,11 +140,20 @@ nav li:hover {
 }
 
 .main-content {
-  min-height: 80vh;
+  height: 80vh;
+  overflow-y: scroll;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.home-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 80vh;
 }
 
 .welcome {
@@ -163,21 +178,34 @@ h2 {
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
 }
 
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 80vh;
+  padding-top: -4rem;
+  text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
+}
+
 .about-us {
   font-family: var(--ff-accent);
   font-size: 5rem;
   color: rgb(211 171 28);
-  margin-top: 3rem;
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
 }
 
-.about-content {
-  text-align: center;
-  text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
-}
 
 .about-content p {
-  padding-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
   margin: 0 5vw;
   max-width: 50rem;
@@ -186,8 +214,8 @@ h2 {
 
 
 footer {
-  position: fixed;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   height: 10vh;
   width: 100%;
   border-top: 2px solid rgb(211 171 28);
