@@ -24,8 +24,7 @@ content.appendChild(createNavBar());
 content.appendChild(createMainContent());
 content.appendChild(createFooter());
 
-// Need to change back to Home Page
-document.querySelector('.main-content').appendChild(createMenu())
+document.querySelector('.main-content').appendChild(createHomePage())
 
 // Nav Event Listeners
 const navTabs = document.querySelectorAll('.navTabs');

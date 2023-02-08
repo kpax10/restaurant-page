@@ -84,6 +84,25 @@ h6 {
 :root {
   --ff-primary: 'Montserrat', sans-serif;
   --ff-accent: 'Monsieur La Doulaise', cursive;
+
+  --clr-bg-100: hsl(0, 0%, 100%);
+  --clr-bg-opa-900: hsla(21, 27%, 10%, 0.6);
+  --clr-font-900: hsl(0, 0%, 0%);
+  --clr-font-100: hsl(0, 0%, 100%);
+  --clr-accent-500: hsl(47, 77%, 47%);
+
+  --fs-100: 0.8rem;
+  --fs-200: 1rem;
+  --fs-300: 1.3rem;
+  --fs-400: 2rem;
+  --fs-500: 3rem;
+  --fs-600: 3.5rem;
+  --fs-700: 4.5rem;
+  --fs-800: 5rem;
+
+  --fw-400: 400;
+  --fw-600: 600;
+
 }
 
 
@@ -91,7 +110,7 @@ h6 {
 body {
   min-height: 100vh;
   font-family: var(--ff-primary);
-  color: white;
+  color: var(--clr-bg-100);
 }
 
 .bg-gradient {
@@ -114,7 +133,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(33, 24, 19, 0.6);
+  background-color: var(--clr-bg-opa-900);
 
 }
 
@@ -127,7 +146,7 @@ nav ul {
 }
 
 nav li {
-  font-size: 1rem;
+  font-size: var(--fs-200);
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -159,16 +178,16 @@ nav li:hover {
 
 .welcome {
   font-family: var(--ff-accent);
-  font-size: 5rem;
+  font-size: var(--fs-800);
   margin: 0;
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
-  color: rgb(211 171 28);
+  color: var(--clr-accent-500);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: var(--fs-500);
   margin-top: -3.4rem;
-  color: rgb(255, 255, 255);
+  color: var(--clr-font-100);
   text-shadow: 0 0 0.1emm black, 0 0 0.1em black, 0 0 0.1em black;
   letter-spacing: 0;
   font-weight: 600;
@@ -189,13 +208,13 @@ h2 {
 
 .menu-heading {
   font-family: var(--ff-accent);
-  font-size: 5rem;
+  font-size: var(--fs-800);
   padding-top: 1rem;
-  color: rgb(211 171 28);
+  color: var(--clr-accent-500);
 }
 
 .menu-content h2 {
-  color: rgb(0, 0, 0);
+  color: var(--clr-font-900);
   text-shadow: none;
 }
 
@@ -211,8 +230,8 @@ h2 {
 }
 
 .menu-item {
-  font-size: 1.3rem;
-  color: rgb(211 171 28);
+  font-size: var(--fs-300);
+  color: var(--clr-accent-500);
   margin-top: 2rem;
   font-weight: 600;
 }
@@ -220,7 +239,7 @@ h2 {
 .menu-item-text {
   margin: 0 auto;
   text-align: center;
-  color: black;
+  color: var(--clr-font-900);
   width: 70%;
 }
 
@@ -229,9 +248,9 @@ h2 {
 }
 
 .menu-price {
-  font-size: 1rem;
+  font-size: var(--fs-200);
   font-weight: 600;
-  color: rgb(211 171 28);
+  color: var(--clr-accent-500);
   margin-bottom: 1rem;
 }
 
@@ -247,8 +266,8 @@ h2 {
 
 .about-us {
   font-family: var(--ff-accent);
-  font-size: 5rem;
-  color: rgb(211 171 28);
+  font-size: var(--fs-800);
+  color: var(--clr-accent-500);
   text-shadow: 0 0 0.05em black, 0 0 0.05em black, 0 0 0.05em black;
 }
 
@@ -266,27 +285,27 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(33, 24, 19, 0.6);
-  color: rgb(211 171 28);
+  background-color: var(--clr-bg-opa-900);
+  color: var(--clr-accent-500);
 }
 
 @media (max-width: 600px) {
 
   .welcome {
-    font-size: 4.5rem;
+    font-size: var(--fs-700);
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: var(--fs-400);
     margin-top: -2.4rem;
   }
 
   .menu-heading {
-    font-size: 3.5rem;
+    font-size: var(--fs-600);
   }
 
   .menu-item-text {
-    font-size: 0.8rem;
+    font-size: var(--fs-100);
   }
 
 }

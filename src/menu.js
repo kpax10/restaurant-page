@@ -14,23 +14,6 @@ export default function createMenu() {
   const hr = document.createElement('hr');
   element.appendChild(hr);
 
-  // const menuItem1 = document.createElement('h3');
-  // menuItem1.classList.add('menu-item');
-  // menuItem1.textContent = 'Pesto Shrimp Pasta';
-  // element.appendChild(menuItem1);
-
-  // const menuDescription1 = document.createElement('p');
-  // menuDescription1.classList.add('menu-item-description');
-  // menuDescription1.textContent = 'Linguine pasta with pesto cream sauce, sundried tomatoes, and mushrooms';
-  // element.appendChild(menuDescription1);
-
-  // const menuPrice1 = document.createElement('span');
-  // menuPrice1.classList.add('menu-price');
-  // menuPrice1.textContent = '$22.95';
-  // element.appendChild(menuPrice1);
-
-  // element.appendChild(document.createElement('hr'));
-
   const menuList = [
     {
       item: 'Pesto Shrimp Pasta',
